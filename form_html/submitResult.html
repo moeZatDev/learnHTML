@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../media/html.png" type="image/x-icon">
+    <title>Submit Results</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+        *{
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        body{
+            padding: 1rem 2rem;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid #1c70ab;
+            padding: 10px;
+            border-radius: 5px;
+            width: 700px;
+        }
+        a{
+            color: rgb(27, 148, 136);
+        }
+        div{
+            color: rgb(6, 71, 129);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../">Go to index</a>
+        <a href="./form.html">Go to HTML Form</a>
+        <a href="../nextPage.html">Go to Next Page</a>
+        <a href="../table.html">Go to HTML Table</a>
+    </nav>
+    <br>
+
+    <a href="./form.html">Back to Form</a>
+    <div id="results"></div>
+
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <script>
+        const resultLists = document.getElementById('results')
+        new URLSearchParams(window.location.search).forEach((value,
+        name) => {
+            resultLists.append(`${name} : ${value}`)
+            resultLists.append(document.createElement('br'))
+        })
+    </script>
+</body>
+</html>

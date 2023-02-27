@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./media/html.png" type="image/x-icon">
+    <title>HTML Table</title>
+    <style>
+        body{
+            padding: 1rem 2rem;
+            font-family: 'Quicksand', sans-serif;
+        }
+        /* table, caption, tr, th, td{
+            border-collapse: collapse;
+            border: 2px solid rgb(7, 85, 148);
+            padding: 10px;
+            text-align: center;
+        } */
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid #21ad36;
+            padding: 10px;
+            border-radius: 5px;
+            width: 700px;
+        }
+        a{
+            color: rgb(20, 72, 144);
+            font-size: 1.125rem;
+            font-weight: 500;
+        }
+        .col2{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Go to index</a>
+        <a href="./nextPage.html">Go to Next Page</a>
+        <a href="./form_html/form.html">Go to HTML Form</a>
+        <a href="./form_html/submitResult.html">Go to Submit Result</a>
+    </nav>
+    <br>
+    
+    <table border="2" cellpadding="10" cellspacing="0">
+    <!-- <table> -->
+        <caption>Exam Results</caption>
+        <colgroup>
+            <col span="1" class="col1">
+            <col span="3" class="col2">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Grade</th>
+                <th scope="col">Role No.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Joe</td>
+                <td rowspan="2">7</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>John</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Jame</td>
+                <td>9</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="4">
+                    These students are the best basketball player in school.
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

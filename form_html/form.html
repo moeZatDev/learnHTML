@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../media/html.png" type="image/x-icon">
+    <title>HTML Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+        *{
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            padding: 1rem 2rem;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid #21ad36;
+            padding: 10px;
+            border-radius: 5px;
+            width: 700px;
+        }
+        a{
+            color: rgb(20, 72, 144);
+        }
+        fieldset{
+            width: 300px;
+            border: solid rgb(93, 172, 241);
+            border-radius: 3px;
+        }
+        .long_fieldset{
+            width: 500px;
+        }
+        legend{
+            border: 3px solid rgb(93, 172, 241);
+            border-radius: 3px;
+            background-color: rgb(93, 172, 241);
+            padding: 3px;
+            color: rgb(255, 255, 255);
+        }
+        input{
+            color: tomato;
+        }
+        .input_button{
+            color: rgb(32, 32, 133);
+        }
+        .demo{
+            text-align: center;
+        }
+        .readonly{
+            cursor: not-allowed;
+        }
+        .multiple_file{
+            color: tomato;
+            margin-top: 10px;
+        }
+        .select_multiple, span{
+            font-size: 13px;
+            color: rgb(111, 132, 149);
+        }
+        button{
+            margin-top: 10px;
+        }
+        textarea{
+            padding: 10px;
+            color: tomato;
+            border: 3px solid tomato;
+            border-radius: 5px;
+            /* outline: none; */
+            outline-offset: 5px;
+            outline-color: rgb(126, 145, 247);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="../">Go to index</a>
+        <a href="./submitResult.html">Go to Submit Result</a>
+        <a href="../nextPage.html">Go to Next Page</a>
+        <a href="../table.html">Go to HTML Table</a>
+    </nav>
+    <br>
+    
+    <form action="./submitResult.html">
+        <fieldset>
+            <legend>Select Gender</legend>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label> <br>
+            <input type="radio" name="gender" id="male" value="male" checked>
+            <label for="male">Male</label><br>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+    <br>
+    
+    <form action="./submitResult.html">
+        <fieldset>
+            <legend>Skill You Have</legend>
+            <input type="checkbox" name="skill" id="html" value="html" checked>
+            <label for="html">html</label> <br>
+            <input type="checkbox" name="skill" id="css" value="css">
+            <label for="css">CSS</label><br>
+            <input type="checkbox" name="skill" id="js" value="js">
+            <label for="js">JavaScript</label><br>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+    <br>
+
+    <form action="./submitResult.html">
+        <fieldset>
+            <legend>Datalist</legend>
+            <label for="fav-browser">Choose or Put your Fav Browser:</label><br>
+            <input list="browsers-list" name="fav-browser" id="fav-browser">
+            <datalist id="browsers-list">
+                <option value="Chrome">Chrome</option>
+                <option value="FireFox">FireFox</option>
+                <option value="Microsoft Eage">Microsoft Eage</option>
+                <option value="Arc">Arc</option>
+            </datalist>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+    <br>
+
+    <form action="./submitResult.html">
+        <fieldset>
+            <legend>Capture Attribute</legend>
+            
+            <label for="soundFile">What does your voice sound like?:</label><br>
+            <input type="file" id="soundFile" capture="user" accept="audio/*">
+            <br><br>
+            
+            <label for="videoFile">Upload a video:</label><br>
+            <input type="file" id="videoFile" capture="environment" accept="video/*">
+            <br><br>
+            
+            <label for="imageFile">Upload a photo of yourself:</label>
+            <input type="file" id="imageFile" capture="user" accept="image/*">
+            <br><br>
+
+            <button type="submit">Done</button>
+        </fieldset>
+    </form>
+    <br>
+
+    <form action="./submitResult.html">
+        <fieldset>
+            <legend>Other input types</legend>
+            
+            <label for="username">Username</label> <br>
+            <input size="30" required type="text" name="username" id="username">
+            <br><br>
+
+            <label for="email">Email</label> <br>
+            <input autocomplete="off" type="email" name="email" id="email">
+            <br><br>
+
+            <label for="password">Password</label> <br>
+            <input minlength="8" type="password" name="password" id="password">
+            <br><br>
+
+            <label for="tel">Phone</label> <br>
+            <input type="tel" name="tel" id="tel" value="+95" maxlength="11">
+            <br><br>
+
+            <label for="web_url">Website URL</label> <br>
+            <input type="url" name="web_url" id="web_url" value="https://">
+            <br><br>
+
+            <label for="fav_color">Select Fav Color</label> <br>
+            <input type="color" name="fav_color" id="fav_color" value="#fff12e">
+            <br><br>
+
+            <label for="decade">Favorite Decade:</label> <br>
+            <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+            <br><br>
+            
+            <label for="current_date">Current Date</label><br>
+            <input type="date" name="current_date" id="current_date"><br><br>
+
+            <label for="current_time">Current time</label><br>
+            <input type="time" name="current_time" id="current_time"><br><br>
+
+            <label for="current_datetime">Current datetime</label><br>
+            <input type="datetime-local" name="current_datetime" id="current_datetime"><br><br>
+
+            <label for="current_month">Current month</label><br>
+            <input type="month" name="current_month" id="current_month"><br><br>
+
+            <label for="current_week">Current week</label><br>
+            <input type="week" name="current_week" id="current_week"><br><br>
+
+            <label for="rating">Rate 1 to 10</label> <br>
+            <input min="1" max="10" type="range" name="rating" id="rating">
+            <br>
+
+            <span>Progress</span> <br>
+            <!-- <progress value="90" max="100">90%</progress> -->
+            <progress></progress>
+            <br>
+  
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+    <br>
+
+    <form action="./submitResult.html">
+        <fieldset class="long_fieldset">
+            <legend class="demo">Hidden Attribute</legend>
+
+            <label for="email">Email</label> <br>
+            <input placeholder="someone@gmail.com" type="email" id="email" name="email"> <br>
+            <input type="hidden" id="custom_id" name="custom_id" value="101">
+            <button type="submit">Submit</button> <br>
+            <span>Please put your email and it will generate id automatically for you.</span>
+            <span>The hidden field is not shown to the user, but the data is sent when the form is submitted.</span>
+
+        </fieldset>
+    </form>
+    <br>
+
+    <form action="./submitResult.html">
+        <fieldset class="long_fieldset">
+            <legend class="demo">Multiple Attribute</legend>
+            
+            <label for="file">Upload Files to Sever :</label> <br>
+            <input multiple type="file" name="file" id="file" class="multiple_file"> <br>
+            <span class="select_multiple">To select multiple files, hold down the CTRL or SHIFT key while selecting.</span>
+            <br><br>
+  
+            <input class="input_button" type="submit"></input>
+        </fieldset>
+    </form>
+    <br>
+
+    <form action="./submitResult.html">
+        <fieldset>
+            <legend class="demo">Disabled and Readonly Attribute</legend>
+            
+            <label for="email">Email</label> <br>
+            <input readonly value="demo@gmail.com" class="readonly" type="email" name="email" id="email">
+            <br><br>
+
+            <label for="password">password</label> <br>
+            <input readonly value="demo12345678" class="readonly" type="password" name="password" id="password">
+            <br><br>
+
+            <label for="tel">Phone</label> <br>
+            <input disabled type="tel" name="tel" id="tel" value="+95" maxlength="11">
+            <br><br>
+  
+            <input class="input_button" type="submit" value="Sign in"></input>
+        </fieldset>
+    </form>
+    <br>
+
+    <form action="./submitResult.html">
+        <fieldset>
+            <legend>Send Feedback</legend>
+            <textarea name="feedback" id="feedback" placeholder="Hey, give some feedback!" cols="30" rows="5"></textarea>
+            <!-- <textarea autofocus name="feedback" id="feedback" placeholder="Hey, give some feedback!" cols="30" rows="5"></textarea> -->
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+    <br>
+    
+    <form action="./submitResult.html" id="form_id">
+        <fieldset>
+            <legend>Form Attribute Test</legend>
+            <label for="mind">What's on your mind?</label>
+            <input id="mind" name="On_my_mind" type="text" autocomplete="off" placeholder="Say Something" autofocus> <br>
+        </fieldset>
+    </form>
+    <button>Submit1</button>
+    <button form="form_id">Submit2</button>
+    <button form="form_id" disabled="disabled">Disabled Button</button>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>

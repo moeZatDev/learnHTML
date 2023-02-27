@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Understanding the concept and purpose of HTML">
+    <meta name="description" content="Learning HTML from MDN, W3schools and other websites.">
+    <meta name="keywords" content="HTML, Learning HTML">
+    <meta name="author" content="John Doe">
+    <meta name="robots" content="index, follow">
+    <!-- <meta name="robots" content="noindex, nofollow"> -->
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <!-- <meta http-equiv="refresh" content="0; url=http://example.com"> -->
+    <!-- <base href="your_website_url" target="_blank"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./media/html.png" type="image/x-icon">
+    <title>Understanding the concept and purpose of HTML</title>
+    <style>
+        noscript{
+            color: black;
+            font-weight: 600;
+            background-color: aquamarine;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="top" style="height: 15px;"></div>
+    <noscript>Your browser doesn't support JavaScript or disable JavaScript.</noscript>
+    <noscript>Hi, I'm noscript tag. I wake up when there is no JavaScript.</noscript>
+    <nav>
+        <a href="./nextPage.html">Go to Next Page</a>
+        <a href="./table.html">Go to HTML Table</a>
+        <a href="./form_html/form.html">Go to HTML Form</a>
+        <a href="./form_html/submitResult.html">Go to Submit Result</a>
+        <a href="#bottom">Go to bottom</a>
+    </nav>
+
+    <h1>Learning the concept and the purpose of HTML</h1>
+
+    <h2>What is HTML?</h2>
+    <p>
+        HTML (Hypertext Markup Language) is the standard markup language for creating web pages. 
+        HTML is not a programming language.
+        HTML describes the structure and layout of a web page and HTML elements tell the browser how to display the content.
+    </p>
+
+    <h2>!DOCTYPE html</h2>
+    <p>
+        DOCTYPE stands for "Document Type Declaration". 
+        In HTML, a DOCTYPE declaration is used to specify which version of HTML is being used in the document. 
+        The DOCTYPE declaration should be placed at the very beginning of an HTML document, before the html tag. 
+        It is not technically an HTML tag, but rather an instruction to the web browser on how to interpret the document.
+    </p>
+    <hr>
+
+    <h2>html tag</h2>
+    <p>The html element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.</p>
+    <hr>
+
+    <h2>Document metadata</h2>
+    <p>Metadata contains information about the page. This includes information about styles, scripts and data to help software (search engines, browsers, etc.) use and render the page.</p>
+    <br>
+
+    <h3>head tag</h3>
+    <p>The head HTML element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.</p>
+    <br>
+
+    <h3>meta tag</h3>
+    <p>The meta HTML element represents Metadata that cannot be represented by other HTML meta-related elements, like base, link, script, style or title.</p>
+    <br>
+
+    <h3>link tag</h3>
+    <p>The link HTML element specifies relationships between the current document and an external resource.</p>
+    <br>
+
+    <h3>base tag</h3>
+    <p>The base HTML element specifies the base URL to use for all relative URLs in a document. There can be only one <base> element in a document.</p>
+    <br>
+
+    <h3>title tag</h3>
+    <p>The title HTML element defines the document's title that is shown in a Browser's title bar or a page's tab.</p>
+    <br>
+
+    <h3>style tag</h3>
+    <p>The style element contains style information for a document. It contains CSS, which is applied to the contents of the document.</p>
+    <br>
+
+    <hr>
+
+    <h2>body tag</h2>
+    <p>The body HTML element represents the content of an HTML document.</p>
+
+    <hr>
+
+    <h2>Scripting Tags</h2>
+    <h3>script tag</h3>
+    <p>The script element is used to embed executable code or data; this is typically used to embed or refer to JavaScript code.</p>
+    
+
+    <h3>noscript tag</h3>
+    <p>The noscript element defines a section of HTML to be inserted if a script type on the page is unsupported or if scripting is currently turned off in the browser.</p>
+    <br><hr>
+
+    <!-- ==================================================================================== -->
+
+    <h2>HTML Heading Elements ( h1 to h6 )</h2>
+    <h1>This is h1</h1>
+    <h2>This is h2</h2>
+    <h3>This is h3</h3>
+    <h4>This is h4</h4>
+    <h5>This is h5</h5>
+    <h6>This is h6</h6>
+    <hr>
+
+    <!-- ==================================================================================== -->
+
+    <h2>HTML Paragraph Element</h2>
+    <p>This is paragraph tag.</p>
+    <hr>
+
+    <!-- ==================================================================================== -->
+
+    <h2>Example of Block and Inline Element</h2>
+    <div>This is div tag.</div>
+    <p>
+        I am <span>(This is span tag inside p tag.)</span> paragraph element.
+    </p>
+    <hr>
+    
+    <!-- ==================================================================================== -->
+
+    <h2>HTML Content Sectioning Elements</h2>
+    <h3>header</h3>
+    <h3>nav</h3>
+    <h3>main</h3>
+    <h3>section</h3>
+    <h3>article</h3>
+    <h3>aside</h3>
+    <h3>footer</h3>
+    <hr>
+
+    <!-- ==================================================================================== -->
+
+    <h2>HTML Spacing Elements</h2>
+    <h3>word break tag (wbr)</h3>
+    <h3>line break tag (br)</h3>
+    <h3>horizontal rule tag (hr)</h3>
+    <hr>
+
+    <!-- ==================================================================================== -->
+
+    <h2>HTML Text Formatting Elements</h2>
+    <strong>This is strong tag.</strong>
+    <br>
+
+    <b>This is bold tag.</b>
+    <br>
+
+    <em>This is emphasized tag.</em>
+    <br>
+
+    <i>This is italic tag.</i>
+    <br>
+
+    <small>This is small tag.</small>
+    <br>
+
+    <mark>This is mark tag.</mark>
+    <br>
+
+    <u>This is underline tag.</u>
+    <br>
+
+    <s>This is strikethrough tag.</s>
+    
+    <p>This shoe is <del>$499</del> --> <ins>$377</ins> .</p>
+
+    <p>x<sup>2</sup></p>
+    <p>H<sub>2</sub></p>
+    <p><sup>1</sup>/<sub>2</sub> + <sup>1</sup>/<sub>2</sub> = 1</p>
+    <hr>
+
+    <!-- ==================================================================================== -->
+
+    <h2>HTML Quotation and Citation Elements</h2>
+
+    <h3>Abbreviation Element (abbr)</h3>
+    <p>This is <abbr title="Abbreviation">abbr</abbr> tag.</p>
+    <p>I'm learning HTML form <abbr title="Mozilla Developer Network">MDN</abbr>.</p>
+    <br>
+
+    <h3>Contact Address Element (address)</h3>
+    <address>
+        Email me at - <a href="mailto:mz@gmail.com">mz@gmail.com</a> <br>
+        Visit to me at - <br>
+        No.18, <br>
+        163th street, <br>
+        Tamwe Township, <br>
+        Yangon, <br>
+        Myanmar.
+    </address>
+    <br>
+
+    <h3>Block Quotation Element and Citation Element (blockquote & cite)</h3>
+    <p>
+        <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML">
+            HTML (HyperText Markup Language) is the most basic building block of the Web. 
+            It defines the meaning and structure of web content.
+            "Hypertext" refers to links that connect web pages to one another, 
+            either within a single website or between websites. 
+            Links are a fundamental aspect of the Web. 
+            By uploading content to the Internet and linking it to pages created by other people, 
+            you become an active participant in the World Wide Web.
+        </blockquote>
+        <cite><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Mozilla Developer Network</a></cite>
+    </p>
+    <br>
+
+    <h3>Short Inline Quotation Element (q)</h3>
+    <p>
+        <q cite="https://www.w3schools.com/html/default.asp">
+            HTML is the standard markup language for Web pages.
+        </q>
+    </p>
+    <br>
+
+    <h3>Bidirectional Text Override Element / Text Direction tag (bdo)</h3>
+    <p>
+        I like <bdo dir="rtl">black</bdo> color.
+    </p>
+    <br>
+
+    <h3>Bidirectional Isolate Element (bdi)</h3>
+    <p>
+        BDI (Bi-Directional Isolation) used to isolate text 
+        that might be formatted in a different direction than the surrounding text.
+        <br>
+
+        BDI tag is used to ensure that text written in a right-to-left script, such as Arabic or Hebrew, 
+        is displayed correctly within a left-to-right context, such as an English language webpage.
+        <br>
+        
+        The BDI tag creates a "directionality isolation" that prevents the text from inheriting the directionality of 
+        the surrounding text. 
+        This means that the text within the BDI tag will be displayed in the correct direction, 
+        regardless of the direction of the surrounding text.
+    </p>
+    <br>
+    
+    <h3>Example of bdi tag</h3>
+    <h1>World wrestling championships</h1>
+    <ul>
+    <li><bdi class="name">Evil Steven</bdi>: 1st place</li>
+    <li><bdi class="name">François fatale</bdi>: 2nd place</li>
+    <li><span class="name">سما</span>: 3rd place</li>
+    <li><bdi class="name">الرجل القوي إيان</bdi>: 4th place</li>
+    <li><span class="name" dir="auto">سما</span>: 5th place</li>
+    </ul>
+    <br>
+
+    <h2>The Definition Element (dfn)</h2>
+    <p>
+        The dfn tag stands for the "definition element", 
+        and it specifies a term that is going to be defined within the content.<br>
+
+        The nearest parent of the dfn tag must also contain the definition/explanation for the term.
+    </p>
+
+    <h3>Usage of dfn tag</h3>
+    <h4>1. Just as the content of the dfn element</h4>
+    <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+    <br>
+
+    <h4>2. With the title attribute added</h4>
+    <p><dfn title="HyperText Markup Language">HTML</dfn> is the standard markup language for creating web pages.</p>
+    <br>
+
+    <h4>3. With an abbr tag inside the dfn element</h4>
+    <p><dfn><abbr title="HyperText Markup Language">HTML</abbr></dfn> is the standard markup language for creating web pages.</p>
+    <br>
+
+    <h4>4. With the id attribute added. Then, whenever a term is used, it can refer back to the definition with an a tag</h4>
+    <p><dfn id="html-def">HTML</dfn> is the standard markup language for creating web pages.</p>
+
+    <p>This is some text...</p>
+    <p>This is some text...</p>
+    <p>Learn <a href="#html-def">HTML</a> now.</p>
+    <br>
+
+    <h2>The (Date) Time Element (time)</h2>
+    <p>
+        The time HTML element represents a specific period in time. 
+        It may include the datetime attribute to translate dates into machine-readable format, 
+        allowing for better search engine results or custom features such as reminders.
+    </p>
+
+    <h3>Example of time element</h3>
+    <p>The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in London's Hyde Park.</p>
+    <p>The concert starts at <time datetime="20:00">20:00</time>.</p>
+    <br>
+
+    <h2>The Data Element (data)</h2>
+    <p>
+        The data tag is used to add a machine-readable translation of a given content. <br>
+
+        This element provides both a machine-readable value for data processors, 
+        and a human-readable value for rendering in a browser.
+    </p>
+
+    <h3>Example of data tag</h3>
+    <p>New Products:</p>
+    <ul>
+        <li><data value="21053">Chip</data></li>
+        <li><data value="21054">Chocolate</data></li>
+        <li><data value="21055">Strawberry</data></li>
+    </ul>
+    <br>
+
+    <h2>The Ruby Annotation Element (ruby / rt / rp)</h2>
+    <p>
+        The ruby HTML element represents small annotations that are rendered above, below, or next to base text, 
+        usually used for showing the pronunciation of East Asian characters. <br>
+
+        It can also be used for annotating other kinds of text, but this usage is less common.
+    </p>
+    <h3>Example of ruby tag</h3>
+    <p>
+        <ruby>
+            မင်္ဂလာပါ <rp>(</rp><rt>Min Ga Lar Par</rt><rp>)</rp>
+        </ruby>
+    </p>
+
+    <hr>
+
+    <!-- ==================================================================================== -->
+
+    <h2>HTML Computer Code Elements</h2>
+
+    <h3>Inline Code Element / Defines programming code (code)</h3>
+    <p>
+        The <code>push()</code> method adds one or more elements to the end of an array and returns the new length of the array.
+    </p>
+    <br>
+
+    <h3>Keyboard Input element / Defines keyboard input (kbd)</h3>
+    <p>Please press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text.</p>
+    <br>
+
+    <h3>Computer Output Element (samp)</h3>
+    <p>I was trying to boot my computer, but I got this hilarious message:</p>
+    <p><samp>Keyboard not found <br>Press F1 to continue</samp></p>
+    <br>
+
+    <h3>Preformatted Text Element (pre)</h3>
+    <pre>
+             I        
+               Feel 
+                    like
+                         A Spaceman.
+    </pre>
+    <hr>
+
+    <!-- ==================================================================================== -->
+
+    <h2>HTML Lists</h2>
+    <h3>List Item with Unordered List Element (ul)</h3>
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ul>
+    <br>
+
+    <h3>List Item with Ordered List Element (ol)</h3>
+    <ol type="1" start="101">
+        <li>apple</li>
+        <li>orange</li>
+        <li>mango</li>
+    </ol>
+    <ol type="A">
+        <li>apple</li>
+        <li>orange</li>
+        <li>mango</li>
+    </ol>
+    <ol type="a">
+        <li>apple</li>
+        <li>orange</li>
+        <li>mango</li>
+    </ol>
+    <ol type="I">
+        <li>apple</li>
+        <li>orange</li>
+        <li>mango</li>
+    </ol>
+    <ol type="i">
+        <li>apple</li>
+        <li>orange</li>
+        <li>mango</li>
+    </ol>
+    <br>
+    
+    <h3>Description List / Description Term / Description Details (dl, dt, dd)</h3>
+    <dl>
+        <dt>GOAT</dt>
+        <dd>- Greatest of All Time</dd>
+        <dt>Cool</dt>
+        <dd>- Fantastic, Excellent, Intensely Good</dd>
+        <dt>Hot</dt>
+        <dd>- Attractive ( Eg - “He/she is hot.” )</dd>
+        <dt>Bummer</dt>
+        <dd>- A disappointment ( Eg - “That’s such a bummer. I’m sorry that happened.” )</dd>
+    </dl>
+    <hr>
+
+    <!-- ==================================================================================== -->
+
+    <h2>Details disclosure Element (details) & Disclosure Summary Element (summary)</h2>
+    <p>
+        The details HTML element creates a disclosure widget 
+        in which information is visible only when the widget is toggled into an "open" state. <br>
+
+        A summary or label must be provided using the summary element.
+    </p>
+
+    <h3>Example of details and summary tag</h3>
+    <p>Answer the quiz:</p>
+    <details>
+        <summary>I have keys but no doors. I have space but no room. You can enter but can’t leave. What am I?</summary>
+        A keyboard.
+    </details>
+    <br><br>
+    <hr>
+
+    <!-- ==================================================================================== -->
+
+    <h2>Anchor tag <span>(a)</span></h2>
+    <a href="https://www.google.com/">Go to google</a> <br>
+    <a href="https://www.google.com/" target="_blank">Go to google</a> <br>
+    <a href="mailto:someone@gmail.com">Send Email</a> <br>
+    <a href="tel:+95 123 456 789">Call Now</a> <br>
+    <a href="./media/porsche-taycan-star-wars.jpg" download>Download Porsche Taycan</a> <br>
+    <a href="./media/porsche-taycan-star-wars.jpg" download="taycan.jpg">Download Porsche Taycan</a> <br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">Learn HTML at MDN<img src="./media/html.png" width="20px" alt=""></a> <br>
+    <button><a href="https://www.youtube.com" style="color: rgb(234, 31, 31);">Go To YouTube</a></button> 
+    <br><br><hr>
+
+    <!-- ==================================================================================== -->
+
+    <h2>Image and multimedia</h2>
+
+    <h3>Image Element (img)</h3>
+    <img src="./media/porscheTaycan.jpg" width="400" alt="Porsche Taycan">
+    <br><br>
+
+    <h3>Figure with Optional Caption Element (figure) & Figure Caption Element (figcaption)</h3>
+    <p>
+        The figure HTML element represents self-contained content, potentially with an optional caption, 
+        which is specified using the figcaption element. <br>
+
+        The figure, its caption, and its contents are referenced as a single unit.
+    </p>
+    <figure>
+        <img class="fig-img"
+             src="./media/porscheTaycan.jpg"
+             alt="A light blue Porsche Taycan"
+             width="400px">
+        <figcaption>A light blue Porsche Taycan</figcaption>
+    </figure>
+    <br><br>
+
+    <h3>Picture Element (picture)</h3>
+    <p>
+        The picture HTML element contains source elements and img element 
+        to offer alternative versions of an image for different display/device scenarios.
+    </p>
+    <br><br>
+
+    <h3>Audio Element (audio)</h3>
+    <audio src="./media/Nick_Jonas_-_2Drunk_Audio_(getmp3.pro).mp3" controls loop muted autoplay></audio>
+    <br><br>
+
+    <audio controls>
+        <source src="./media/Nick_Jonas_-_2Drunk_Audio_(getmp3.pro).mp3">
+    </audio>
+    <br><br>
+
+    <h3>Video Element (video)</h3>
+    <video src="./media/A_Ship_with_the_Power_of_Porsche_D_(getmp3.pro).mp4" width="800px" controls loop muted autoplay></video>
+    <br><br>
+
+    <video controls width="800px" poster="./media/porsche-taycan-star-wars.jpg">
+        <source src="./media/A_Ship_with_the_Power_of_Porsche_D_(getmp3.pro).mp4">
+    </video>
+
+    <br><br><hr>
+
+    <!-- ==================================================================================== -->    
+
+    <h2>Embedded Content</h2>
+
+    <h3>Iframe Element (iframe)</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7L2RLBmEJmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br><br>
+
+    <h3>Embed External Content Element (embed)</h3>
+    <embed src="https://mms-it.com/" width="350" height="600">
+    <br><br>
+
+    <h3>The External Object Element (object)</h3>
+    <p>
+        The object tag defines a container for an external resource. <br>
+        The external resource can be a web page, a picture, a media player, or a plug-in application.
+    </p>
+    <h3>Example of object tag</h3>
+    <object data="./media/porscheTaycan.jpg" width="400"></object>
+    <br><br>
+
+    <object data="./nextPage.html" width="1000px" height="300" style="border: 2px solid blueviolet;"></object>
+    <!-- <br> -->
+
+    <!-- <object data="./media/A_Ship_with_the_Power_of_Porsche_D_(getmp3.pro).mp4" style="width: 400px; border: 2px solid blueviolet;"></object> -->
+    <!-- <br> -->
+
+    <!-- <object data="./media/Nick_Jonas_-_2Drunk_Audio_(getmp3.pro).mp3"></object> -->
+
+    <br><br><hr>
+
+    <!-- ==================================================================================== -->
+
+    <a href="#top" id="bottom">Go to top</a>
+
+    <script>
+        console.log("Hi, I'm inside the script tag.")
+    </script>
+
+</body>
+</html>

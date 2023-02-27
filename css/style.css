@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #fff98c;
+    padding: 10px;
+    border-radius: 5px;
+    width: 800px;
+}
+a{
+    color: rgb(144, 202, 252);
+}
+p, a{
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+.mdnHtml{
+    vertical-align: middle;
+}
+table, caption, tr, th, td{
+    border: 2px solid #fff98c;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+caption{
+    background-color: #775ada;
+}
+.col1{
+    background-color: #c94e4e;
+}
+.col2{
+    background-color: #085f63;
+}
+tfoot{
+    background-color: #10316b;
+}
+kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: .85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+code {
+    /* background-color: #333; */
+    background-color: #272626;
+    border-radius: 3px;
+    /* font-family: courier, monospace; */
+    padding: 0 3px;
+}
+pre{
+    font-size: large;
+    font-weight: 600;
+}
+data:hover::after {
+    content: ' (ID ' attr(value) ')';
+    font-size: .7em;
+}
+ruby {
+	font-size: 1.4em;
+}
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+    display: inline-block;
+}
+
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+}
+
+details[open] {
+    padding: 0.5em;
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    /* margin: auto; */
+}
+
+.fig-img {
+    max-width: 220px;
+    max-height: 150px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
